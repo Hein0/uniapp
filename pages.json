@@ -1,0 +1,100 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",//首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		}
+        ,{
+            "path" : "pages/login/login",//登录
+            "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+        }
+		,{
+		    "path" : "pages/login/retrievePsw",//忘记密码
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}
+		,{
+		    "path" : "pages/login/resetPsw",//重置密码
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}
+		,{
+		    "path" : "pages/login/emRegister",//邮箱注册
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}
+		,{
+		    "path" : "pages/login/iphonRegister",//手机注册
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}
+		,{
+		    "path" : "pages/login/register",//设置密码、注册
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}
+        ,{
+            "path" : "pages/activate/activate",//激活
+            "style" : {
+				"navigationBarTitleText": "激活",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+        }
+		
+        ,{
+            "path" : "pages/mine/mine",//我的
+            "style" : {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+        }
+    ],
+	//底部导航
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#2F85FC",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/images/home_nosel.png",
+			"selectedIconPath": "static/images/home_sel.png",
+			"text": "首页"
+		},
+		{
+			"pagePath": "pages/activate/activate",
+			"iconPath": "static/images/activation_nosel.png",
+			"selectedIconPath": "static/images/activation_sel.png",
+			"text": "激活"
+		},
+		{
+			"pagePath": "pages/mine/mine",
+			"iconPath": "static/images/my_nosel.png",
+			"selectedIconPath": "static/images/my_sel.png",
+			"text": "我的"
+		}]
+	},
+	//样式
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uniApp",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
