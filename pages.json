@@ -56,7 +56,6 @@
 				"navigationBarBackgroundColor": "#FFFFFF"
 			}
         }
-		
         ,{
             "path" : "pages/mine/mine",//我的
             "style" : {
@@ -64,6 +63,27 @@
 				"navigationBarBackgroundColor": "#FFFFFF"
 			}
         }
+		,{
+		    "path" : "pages/index/extract",//提币
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}
+        ,{
+            "path" : "pages/mine/paymentlist",//收支明细
+            "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+        },
+		{
+		    "path" : "pages/mine/revampPayPsw",//修改支付密码
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}
     ],
 	//底部导航
 	"tabBar": {

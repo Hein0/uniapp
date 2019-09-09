@@ -7,7 +7,7 @@
 				<view class="perMsg">介绍之类的话</view>
 			</view>
 		</view>
-		<view class="list-item">
+		<view class="list-item" @click="gotoExtract">
 			<text class="itemImg"><image style="width: 33rpx;height: 40rpx;" src="../../static/images/my_detail.png" mode=""></image></text>
 			<text class="itemTxt">收入明细</text>
 		</view>
@@ -19,11 +19,11 @@
 			<text class="itemImg"><image style="width: 35rpx;height: 40rpx;" src="../../static/images/my_password.png" mode=""></image></text>
 			<text class="itemTxt">修改登录密码</text>
 		</view>
-		<view class="list-item">
+		<view class="list-item" @click="revamPaypasw">
 			<text class="itemImg"><image style="width: 32rpx;height: 38rpx;" src="../../static/images/my_pay.png" mode=""></image></text>
 			<text class="itemTxt">修改支付密码</text>
 		</view>
-		<view class="list-item">
+		<view class="list-item" @click="logout">
 			<text class="itemImg"><image style="width: 34rpx;height: 36rpx;" src="../../static/images/my_exit.png" mode=""></image></text>
 			<text class="itemTxt">注销登录</text>
 		</view>
@@ -34,10 +34,48 @@
 	export default {
 		data() {
 			return {
-				
+				openid:""
 			}
 		},
+		created(){
+			uni.setStorage({
+				key:"openid",
+				data:"123456"
+			})
+		},
+		//挂载完成
+		mounted(){
+			let self = this;
+			 uni.getStorage({
+				key:"openid",
+				success: function (res) {
+					self.openid = res.data;
+				}
+			})
+		},
+		//方法
 		methods: {
+			
+			//收支明细
+			gotoExtract(){
+				uni.navigateTo({
+					url:'/pages/mine/paymentlist'
+				})
+			},
+			
+			//修改支付密码
+			revamPaypasw(){
+				uni.navigateTo({
+					url:'/pages/mine/revampPayPsw'
+				})
+			},
+			//注销登录
+			logout(){
+				uni.clearStorage();
+				uni.navigateTo({
+					url:'/pages/login/login'
+				})
+			}
 			
 		}
 	}
