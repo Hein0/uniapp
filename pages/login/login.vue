@@ -11,7 +11,7 @@
 			<view class="inputTit">登录密码</view>
 			<text class="inputTxt"><input type="text" placeholder="请输入登录密码" value="" /></text>
 		</view>
-		<view class="loginBto">登录</view>
+		<view class="loginBto" @click="loginBto">登录</view>
 		<view class="forgetPassword">
 			<text @click="gotoPsw">忘记密码</text>
 		</view>
@@ -29,6 +29,13 @@
 			}
 		},
 		methods: {
+			
+			//登录
+			loginBto(){
+				uni.switchTab({
+					url: '/pages/index/index'
+				});
+			},
 			//忘记密码
 			gotoPsw(){
 				uni.navigateTo({

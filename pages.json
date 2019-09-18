@@ -1,80 +1,107 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+        {
+            "path" : "pages/login/login",//登录
+            "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+        },
+		{
+		    "path" : "pages/login/retrievePsw",//忘记密码
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
 		{
 			"path": "pages/index/index",//首页
 			"style": {
 				"navigationBarTitleText": "首页",
 				"navigationStyle": "custom"
 			}
-		}
-        ,{
-            "path" : "pages/login/login",//登录
-            "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-        }
-		,{
-		    "path" : "pages/login/retrievePsw",//忘记密码
-		    "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		}
-		,{
+		},
+		{
 		    "path" : "pages/login/resetPsw",//重置密码
 		    "style" : {
 				"navigationBarTitleText": "",
 				"navigationBarBackgroundColor": "#FFFFFF"
 			}
-		}
-		,{
+		},
+		{
 		    "path" : "pages/login/emRegister",//邮箱注册
 		    "style" : {
 				"navigationBarTitleText": "",
 				"navigationBarBackgroundColor": "#FFFFFF"
 			}
-		}
-		,{
+		},
+		{
 		    "path" : "pages/login/iphonRegister",//手机注册
 		    "style" : {
 				"navigationBarTitleText": "",
 				"navigationBarBackgroundColor": "#FFFFFF"
 			}
-		}
-		,{
+		},
+		{
 		    "path" : "pages/login/register",//设置密码、注册
 		    "style" : {
 				"navigationBarTitleText": "",
 				"navigationBarBackgroundColor": "#FFFFFF"
 			}
-		}
-        ,{
+		},
+        {
             "path" : "pages/activate/activate",//激活
             "style" : {
 				"navigationBarTitleText": "激活",
 				"navigationBarBackgroundColor": "#FFFFFF"
 			}
-        }
-        ,{
+        },
+        {
             "path" : "pages/mine/mine",//我的
             "style" : {
 				"navigationBarTitleText": "我的",
 				"navigationBarBackgroundColor": "#FFFFFF"
 			}
-        }
-		,{
+        },
+		{
 		    "path" : "pages/index/extract",//提币
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
+			}
+		},
+		{
+		    "path" : "pages/index/exRecord",//提币记录
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
+			}
+		},
+		{
+		    "path" : "pages/index/recharge",//充币
 		    "style" : {
 				"navigationBarTitleText": "",
 				"navigationBarBackgroundColor": "#FFFFFF"
 			}
-		}
-        ,{
+		},
+        {
             "path" : "pages/mine/paymentlist",//收支明细
             "style" : {
 				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF"
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
 			}
         },
 		{

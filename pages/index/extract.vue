@@ -1,49 +1,61 @@
 <template>
-	<view class="content">
-		
-		<view class="inputCen">
-			<view class="inputTit">选择币种</view>
-			<view class="inputTxt0">
-				<view class="arrow">BTC</view>
+	<view class=" extract">
+		<hdBar :leftWords="leftWords" :rightWords='"提币记录"' @eventName="gotoRecord"></hdBar>
+		<view class="content">
+			<view class="inputCen">
+				<view class="inputTit">选择币种</view>
+				<view class="inputTxt0">
+					<view class="arrow">BTC</view>
+				</view>
 			</view>
-		</view>
-		
-		<view class="inputCen matop">
-			<view class="inputTit flexs"><text>发布金额</text><text class="blue">可用余额:100UTB</text></view>
-			<view class="inputTxt2"><input type="number" placeholder="请输入发布金额" value="" /></view>
-		</view>
-		
-		<view class="inputCen matop">
-			<view class="inputTit">收币地址</view>
-			<view class="iphoneCen">
-				<text class="inputTxt"><input type="text" placeholder="请输入收币地址" :value="USDT" /></text>
-				<text class="iphoneTab">USDT</text>
+			
+			<view class="inputCen matop">
+				<view class="inputTit flexs"><text>发布金额</text><text class="blue">可用余额:100UTB</text></view>
+				<view class="inputTxt2"><input type="number" placeholder="请输入发布金额" value="" /></view>
 			</view>
+			
+			<view class="inputCen matop">
+				<view class="inputTit">收币地址</view>
+				<view class="iphoneCen">
+					<text class="inputTxt"><input type="text" placeholder="请输入收币地址" :value="USDT" /></text>
+					<text class="iphoneTab">USDT</text>
+				</view>
+			</view>
+			
+			<view class="inputCen matop">
+				<view class="inputTit">支付密码</view>
+				<view class="inputTxt2"><input type="password" placeholder="请输入支付密码" value="" /></view>
+			</view>
+			
+			<view class="activate" @click="extractBtu">确定提币</view>
 		</view>
-		
-		<view class="inputCen matop">
-			<view class="inputTit">支付密码</view>
-			<view class="inputTxt2"><input type="password" placeholder="请输入支付密码" value="" /></view>
-		</view>
-		
-		<view class="activate" @click="extractBtu">确定提币</view>
-		
 	</view>
 </template>
 
 <script>
-	import pagehede from '@/components/header.vue'
+	import hdBar from '@/components/headertopBar.vue'
 	export default {
 		name:'extract',
-		comments:{
-			pagehede:pagehede,
+		components:{
+			hdBar
 		}, 
 		data() {
 			return {
-				USDT:100
+				leftWords:"提币",
+				USDT:100,
 			}
 		},
 		methods: {
+			
+			//去提币记录
+			gotoRecord(){
+				uni.navigateTo({
+					url:'/pages/index/exRecord',
+					animationType: 'pop-in',
+					animationDuration: 200
+				})
+			}
+			
 			
 		}
 	}

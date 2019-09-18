@@ -72,7 +72,7 @@
 			//注销登录
 			logout(){
 				uni.clearStorage();
-				uni.navigateTo({
+				uni.reLaunch({
 					url:'/pages/login/login'
 				})
 			}

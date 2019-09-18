@@ -56,47 +56,47 @@
         z-index: 999;
     }    
 	.index-header {
-		height: 88upx;
-		line-height: 88upx;
-		padding: 0 30upx;
-		padding-top: 40upx;
-		background-color: #00c16f;
-		font-size: 28upx;
+		height: 88rpx;
+		line-height: 88rpx;
+		padding: 0 30rpx;
+		padding-top: 40rpx;
+		background-color: #3C8BFF;
+		font-size: 28rpx;
 		color: #fff;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}    
 	.address {
-		font-size: 26upx;
+		font-size: 26rpx;
 	}
             
 	.input-wrap {
-		width: 500upx;
-		height: 70upx;
-		padding: 10upx 30upx 10upx 100upx;
+		width: 500rpx;
+		height: 70rpx;
+		padding: 10rpx 30rpx 10rpx 100rpx;
 		box-sizing: border-box;
 		background-color: #fff;
-		border-radius: 50upx;
+		border-radius: 50rpx;
 		color: #333333;
 		position: relative;
 	}
     .input-wrap text {
         position: absolute;
-        left: 40upx;
-        top: -8upx;
+        left: 40rpx;
+        top: -8rpx;
         color: #999999;
-        font-size: 30upx;
+        font-size: 30rpx;
     }        
     .map-wrap .iconfont {
-        font-size: 32upx;
-        margin-right: 5upx;
+        font-size: 32rpx;
+        margin-right: 5rpx;
     }    
-    .map-wrap .iconfont text {
-        font-size: 26upx;
+    .map-wrap text {
+        font-size: 26rpx;
     }    
     
     .blank {
-        height: 126upx;
+        height: 126rpx;
     }
 </style>
