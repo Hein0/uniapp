@@ -1,21 +1,24 @@
 <template>
-	<view class="content">
-		<view class="titleCen">重置密码</view>
-		<view class="inputCen">
-			<view class="inputTit">登录密码</view>
-			<text class="inputTxt"><input type="text" placeholder="请输入新的密码" value="" /></text>
+	<view class="resetPswPage">
+		<hdBar></hdBar>
+		<view class="content">
+			<view class="titleCen">重置密码</view>
+			<view class="inputCen">
+				<view class="inputTit">登录密码</view>
+				<text class="inputTxt"><input type="text" placeholder="请输入新的密码" value="" /></text>
+			</view>
+			<view class="inputCen matop">
+				<view class="inputTit">再确认登录密码</view>
+				<text class="inputTxt"><input type="text" placeholder="请输入登录密码" value="" /></text>
+			</view>
+			<view class="resetPsw"  @click="resetPsw">重置</view>
 		</view>
-		<view class="inputCen matop">
-			<view class="inputTit">再确认登录密码</view>
-			<text class="inputTxt"><input type="text" placeholder="请输入登录密码" value="" /></text>
-		</view>
-		<view class="resetPsw"  @click="resetPsw">重置</view>
-
 	</view>
 </template>
 
 <script>
 	export default {
+		name:"resetPswPage",
 		data() {
 			return {
 				
@@ -32,7 +35,7 @@
 
 <style>
 	.content{padding: 30rpx;}
-	.titleCen{font-size: 52rpx;color:#454372;margin:80rpx 0 ;}
+	.titleCen{font-size: 52rpx;color:#454372;margin:0 0 80rpx;}
 	.matop{margin-top:30rpx;}
 	.inputCen .inputTit{font-size: 24rpx;color: #37416B;padding-bottom: 20rpx;}
 	.inputCen .inputTxt{width: 690rpx;height:90rpx;background: #F6F7F9;border-radius:10rpx;}

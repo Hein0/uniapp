@@ -1,6 +1,6 @@
 <template>
 	<view class=" extract">
-		<hdBar :leftWords="leftWords" :rightWords='"提币记录"' @eventName="gotoRecord"></hdBar>
+		<hdBar :leftWords="'提币'" :rightWords='"提币记录"' @eventName="gotoRecord"></hdBar>
 		<view class="content">
 			<view class="inputCen">
 				<view class="inputTit">选择币种</view>
@@ -33,15 +33,13 @@
 </template>
 
 <script>
-	import hdBar from '@/components/headertopBar.vue'
 	export default {
 		name:'extract',
 		components:{
-			hdBar
+			
 		}, 
 		data() {
 			return {
-				leftWords:"提币",
 				USDT:100,
 			}
 		},
@@ -50,9 +48,7 @@
 			//去提币记录
 			gotoRecord(){
 				uni.navigateTo({
-					url:'/pages/index/exRecord',
-					animationType: 'pop-in',
-					animationDuration: 200
+					url:'/pages/index/exRecord'
 				})
 			}
 			

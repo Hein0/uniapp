@@ -1,30 +1,33 @@
 <template>
-	<view class="content">
-		<view class="inputCen">
-			<view class="inputTit">手机号</view>
-			<text class="inputTxt"><input type="text" placeholder="请输入手机号" value="" /></text>
-		</view>
-		
-		<view class="inputCen matop">
-			<view class="inputTit">验证码</view>
-			<view class="verification">
-				<text class="verificationCode"><input type="text" placeholder="请输入验证码" value="" /></text>
-				<text class="getCode">获取验证码</text>
+	<view class="revampayPswPage">
+		<hdBar :leftWords="'修改交易密码'"></hdBar>
+		<view class="content">
+			<view class="inputCen">
+				<view class="inputTit">手机号</view>
+				<text class="inputTxt"><input type="text" placeholder="请输入手机号" value="" /></text>
 			</view>
+			
+			<view class="inputCen matop">
+				<view class="inputTit">验证码</view>
+				<view class="verification">
+					<text class="verificationCode"><input type="text" placeholder="请输入验证码" value="" /></text>
+					<text class="getCode">获取验证码</text>
+				</view>
+			</view>
+			
+			<view class="inputCen matop">
+				<view class="inputTit">新支付密码</view>
+				<text class="inputTxt"><input type="password" placeholder="请输入新支付密码" value="" /></text>
+			</view>
+			
+			<view class="nexts">确认修改</view>
 		</view>
-		
-		<view class="inputCen matop">
-			<view class="inputTit">新支付密码</view>
-			<text class="inputTxt"><input type="password" placeholder="请输入新支付密码" value="" /></text>
-		</view>
-		
-		<view class="nexts">确认修改</view>
-
 	</view>
 </template>
 
 <script>
 	export default {
+		name:"revampayPswPage",
 		data() {
 			return {
 				

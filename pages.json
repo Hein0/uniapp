@@ -11,8 +11,10 @@
 		{
 		    "path" : "pages/login/retrievePsw",//忘记密码
 		    "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF"
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
 			}
 		},
 		{
@@ -25,50 +27,58 @@
 		{
 		    "path" : "pages/login/resetPsw",//重置密码
 		    "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF"
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
 			}
 		},
 		{
 		    "path" : "pages/login/emRegister",//邮箱注册
 		    "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF"
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
 			}
 		},
 		{
 		    "path" : "pages/login/iphonRegister",//手机注册
 		    "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF"
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
 			}
 		},
 		{
 		    "path" : "pages/login/register",//设置密码、注册
 		    "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF"
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
 			}
 		},
         {
             "path" : "pages/activate/activate",//激活
             "style" : {
 				"navigationBarTitleText": "激活",
-				"navigationBarBackgroundColor": "#FFFFFF"
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarColor":"#454372"
 			}
         },
         {
             "path" : "pages/mine/mine",//我的
             "style" : {
 				"navigationBarTitleText": "我的",
-				"navigationBarBackgroundColor": "#FFFFFF"
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarColor":"#454372"
 			}
         },
 		{
 		    "path" : "pages/index/extract",//提币
 		    "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF",
 				"navigationStyle": "custom",
 				"app-plus": {  
 					"titleNView": false  
@@ -78,8 +88,6 @@
 		{
 		    "path" : "pages/index/exRecord",//提币记录
 		    "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF",
 				"navigationStyle": "custom",
 				"app-plus": {  
 					"titleNView": false  
@@ -89,15 +97,15 @@
 		{
 		    "path" : "pages/index/recharge",//充币
 		    "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF"
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
 			}
 		},
         {
             "path" : "pages/mine/paymentlist",//收支明细
             "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF",
 				"navigationStyle": "custom",
 				"app-plus": {  
 					"titleNView": false  
@@ -107,17 +115,19 @@
 		{
 		    "path" : "pages/mine/revampPayPsw",//修改支付密码
 		    "style" : {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#FFFFFF"
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
 			}
 		}
     ],
 	//底部导航
 	"tabBar": {
-		"color": "#000000",
+		"color": "#DADDEA",
 		"selectedColor": "#2F85FC",
 		"backgroundColor": "#FFFFFF",
-		"borderStyle": "black",
+		"borderStyle": "#DADDEA",
 		"list": [{
 			"pagePath": "pages/index/index",
 			"iconPath": "static/images/home_nosel.png",

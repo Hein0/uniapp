@@ -1,27 +1,31 @@
 <template>
-	<view class="content">
-		<view class="titleCen">邮箱注册</view>
-		<view class="inputCen">
-			<view class="inputTit">邮箱号</view>
-			<text class="inputTxt"><input type="text" placeholder="请输入邮箱号" value="" /></text>
-		</view>
-		<view class="inputCen matop">
-			<view class="inputTit">验证码</view>
-			<view class="verification">
-				<text class="verificationCode"><input type="text" placeholder="请输入验证码" value="" /></text>
-				<text class="getCode">获取验证码</text>
+	<view class="emregister">
+		<hdBar></hdBar>
+		<view class="content">
+			<view class="titleCen">邮箱注册</view>
+			<view class="inputCen">
+				<view class="inputTit">邮箱号</view>
+				<text class="inputTxt"><input type="text" placeholder="请输入邮箱号" value="" /></text>
 			</view>
-			
-		</view>
-		<view class="nexts" @click="nexts">下一步</view>
-		<view class="gotoiphonReg">
-			<text class="iphonReg" @click="gotoIphonregi">手机注册</text>
+			<view class="inputCen matop">
+				<view class="inputTit">验证码</view>
+				<view class="verification">
+					<text class="verificationCode"><input type="text" placeholder="请输入验证码" value="" /></text>
+					<text class="getCode">获取验证码</text>
+				</view>
+				
+			</view>
+			<view class="nexts" @click="nexts">下一步</view>
+			<view class="gotoiphonReg">
+				<text class="iphonReg" @click="gotoIphonregi">手机注册</text>
+			</view>
 		</view>
 	</view>
 </template>
 
 <script>
 	export default {
+		name:'emregister',
 		data() {
 			return {
 				
@@ -48,7 +52,7 @@
 
 <style>
 	.content{padding: 30rpx;}
-	.titleCen{font-size: 52rpx;color:#454372;margin:80rpx 0 ;}
+	.titleCen{font-size: 52rpx;color:#454372;margin:0 0 80rpx;}
 	.matop{margin-top:30rpx;}
 	.inputCen .inputTit{font-size: 24rpx;color: #37416B;padding-bottom: 20rpx;}
 	.inputCen .inputTxt{width: 690rpx;height:90rpx;background: #F6F7F9;border-radius:10rpx;}

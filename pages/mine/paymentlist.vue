@@ -1,6 +1,6 @@
 <template>
 	<view class="">
-		<hdBar :leftWords="leftWords" :rightIcon="'sx'" @eventName="screen"></hdBar>
+		<hdBar :leftWords="'收支明细'" :rightIcon="'sx'" @eventName="screen"></hdBar>
 		<view class="wrap-page">
 			<view class="itemList" v-for="(item,index) in list" :key="index">
 				<view class="itemTitle">
@@ -16,15 +16,14 @@
 
 <script>
 	// import {uniNavBar} from "@dcloudio/uni-ui"
-	import hdBar from '@/components/headertopBar.vue'
 	export default {
 		name:"paymentlist",
 		components:{
-			hdBar
+			
 		},
 		data() {
 			return {
-				leftWords:"收支明细",
+				
 				list:[{number:'100',time:"2019/9/9 17:47"},{number:'100',time:"2019/9/9 17:47"},{number:'100',time:"2019/9/9 17:47"}]
 			}
 		},
