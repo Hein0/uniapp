@@ -120,6 +120,15 @@
 					"titleNView": false  
 				}
 			}
+		},
+		{
+		    "path" : "pages/mine/share",//好友分享
+		    "style" : {
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"titleNView": false  
+				}
+			}
 		}
     ],
 	//底部导航

@@ -11,7 +11,7 @@
 			<text class="itemImg"><image style="width: 33rpx;height: 40rpx;" src="../../static/images/my_detail.png" mode=""></image></text>
 			<text class="itemTxt">收入明细</text>
 		</view>
-		<view class="list-item">
+		<view class="list-item" @click="gotoShare">
 			<text class="itemImg"><image style="width: 34rpx;height: 34rpx;" src="../../static/images/my_share.png" mode=""></image></text>
 			<text class="itemTxt">分享好友</text>
 		</view>
@@ -55,6 +55,13 @@
 		},
 		//方法
 		methods: {
+			
+			//好友分享
+			gotoShare(){
+				uni.navigateTo({
+					url:'/pages/mine/share'
+				})
+			},
 			
 			//收支明细
 			gotoExtract(){

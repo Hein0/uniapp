@@ -1,5 +1,5 @@
 <template>
-	<view class="">
+	<view class="paymentlistPage">
 		<hdBar :leftWords="'收支明细'" :rightIcon="'sx'" @eventName="screen"></hdBar>
 		<view class="wrap-page">
 			<view class="itemList" v-for="(item,index) in list" :key="index">
